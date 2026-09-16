@@ -1,0 +1,22 @@
+{
+  "name": "northstar-banking",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run api\" \"vite\"",
+    "frontend": "vite",
+    "api": "node --env-file-if-exists=.env server.mjs",
+    "dev:all": "npm run dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@simplewebauthn/browser": "^14.0.0",
+    "@simplewebauthn/server": "^14.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "vite": "latest"
+  }
+}

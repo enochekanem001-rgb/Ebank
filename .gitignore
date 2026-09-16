@@ -1,0 +1,4 @@
+.env
+northstar.db
+node_modules/
+dist/
